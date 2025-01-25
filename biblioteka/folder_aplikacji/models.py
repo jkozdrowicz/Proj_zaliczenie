@@ -47,7 +47,7 @@ class Czytelnik(models.Model):
         return self.uzytkownik.username
     
     class Meta:
-        ordering = ['uzytkownik__username']  # Posortowani alfabetycznie według username.
+        ordering = ['uzytkownik__username']  # Posortowanie alfabetycznie według username.
 
 class Wypozyczenie(models.Model):
     czytelnik = models.ForeignKey(Czytelnik, on_delete=models.CASCADE)
