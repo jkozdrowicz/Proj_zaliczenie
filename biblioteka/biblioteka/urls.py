@@ -16,7 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from folder_aplikacji import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('kategorie/', views.kategoria_list),
+    path('kategorie/<int:pk>/', views.kategoria_details),
+    path('autorzy/', views.autor_list),
+    path('autorzy/<int:pk>/', views.autor_details),
+    path('ksiazki/', views.ksiazka_list),
+    path('ksiazki/<int:pk>/', views.ksiazka_details),
+    path('czytelnicy/', views.czytelnik_list),
+    path('czytelnicy/<int:pk>/', views.czytelnik_details),
+    path('wypozyczenia/', views.wypozyczenie_list),
+    path('wypozyczenia/<int:pk>/', views.wypozyczenie_details),
+    path('ksiazki_html/', views.ksiazki_list_html),
+    path('ksiazki_html/<int:id>/', views.ksiazki_detail_html),
+    path('welcome/', views.welcome_view),
 ]
