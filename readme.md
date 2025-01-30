@@ -2,4 +2,4 @@
 # Autorzy: 
 * Zuzanna Jędrzejczak
 * Julia Kozdrowicz
-* Wojciech Stępniewskipython3
+* Wojciech Stępniewski
